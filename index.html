@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest insights and innovations in technology, software development, and digital transformation.">
+    <title>TechInsight Hub - Innovation Starts Here</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0A2540;
+            --secondary: #4CAF50;
+            --accent: #FF5722;
+            --light-gray: #F5F5F5;
+            --dark-gray: #4A4A4A;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary), #1a3a5f);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: var(--secondary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .articles {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            background: var(--light-gray);
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-content h3 {
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">TechInsight Hub</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Innovation Starts Here</h1>
+        <p>Explore the future of technology with expert insights and analysis</p>
+        <a href="#" class="cta-button">Discover More</a>
+    </section>
+
+    <section class="articles">
+        <article class="article-card">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <div class="meta">By Sarah Chen • March 15, 2024</div>
+                <h3>The Rise of AI in Modern Software Development</h3>
+                <p>Exploring how artificial intelligence is revolutionizing the way we build and deploy software solutions.</p>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <div class="meta">By James Wilson • March 14, 2024</div>
+                <h3>Cloud Computing Trends in 2024</h3>
+                <p>An in-depth look at the latest developments shaping the future of cloud infrastructure.</p>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <div class="meta">By Maria Rodriguez • March 13, 2024</div>
+                <h3>Cybersecurity Best Practices for Remote Teams</h3>
+                <p>Essential security measures for maintaining data integrity in distributed workforces.</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>TechInsight Hub is your premier source for technology news, insights, and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Latest Articles</a></li>
+                    <li><a href="#">Technology Trends</a></li>
+                    <li><a href="#">Developer Resources</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: info@techinsighthub.com</li>
+                    <li>Phone: (555) 123-4567</li>
+                    <li>Address: 123 Tech Avenue, Innovation City</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
